@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
-  root "welcome#index"
+  root 'welcome#index'
+  get '/auth/:provider/callback', to: 'session#create'
+  delete '/logout', to: 'session#destroy'
 end
