@@ -44,6 +44,7 @@ group :development do
   gem 'spring', '>= 2.1', '< 3.0'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'annotate'
+  gem 'rails-i18n'
 end
 
 group :test do
